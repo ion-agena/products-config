@@ -1,0 +1,15 @@
+server:
+  port: 8989
+feign.client.config.default.loggerLevel: full
+logging:
+  level:
+    com.agenatech: DEBUG
+keycloack:
+  url: ${keycloak-client.server-url}
+  admin-secret: 96bff021-0c5f-49a9-bfbb-6ddd21bb2dcc
+  cli-token-uri: auth/realms/master/protocol/openid-connect/token
+  users-uri: auth/admin/realms/${keycloak-client.realm}/users
+keycloak-client:
+  server-url: http://localhost:8085
+  realm: spring-micro-main
+
