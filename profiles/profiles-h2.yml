@@ -3,7 +3,7 @@ spring:
     url: jdbc:h2:file:./data/demo
     driverClassName: org.h2.Driver
     username: sa
-    password: password
+    password: {cipher}ab5bc1b489e067a0810b45bb9f9f207d6f24e77c0805c5990dcf6b90dffbee7a
     initialization-mode: always
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
