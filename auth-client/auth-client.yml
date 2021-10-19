@@ -1,0 +1,18 @@
+server:
+  port: 9292
+logging:
+  level:
+    com.agenatech: DEBUG
+feign.client.config.default.loggerLevel: full
+keycloack:
+  url: ${keycloak-client.server-url}
+  secret: 9a09149c-fc58-4f66-a6e3-00109eb4517a
+  client: test-gateway
+  token-uri: auth/realms/${keycloak-client.realm}/protocol/openid-connect/token
+  logout-uri: auth/realms/${keycloak-client.realm}/protocol/openid-connect/logout
+keycloak-client:
+  server-url: http://localhost:8085
+  realm: spring-micro-main
+profiles:
+  register-uri: api/v1/profiles/signup
+
