@@ -15,7 +15,7 @@ keycloak-client:
   realm: spring-micro-main
 profiles:
   register-uri: api/v1/profiles/signup
-anagement:
+management:
   endpoints:
     web:
       exposure:
