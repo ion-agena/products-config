@@ -6,7 +6,7 @@ logging:
 feign.client.config.default.loggerLevel: full
 keycloack:
   url: ${keycloak-client.server-url}
-  secret: 9a09149c-fc58-4f66-a6e3-00109eb4517a
+  secret: '{cipher}29f537d8d16b3a98762c1e1d43e1b7fb3a037f7748e49bcd4f3cbfe0e4ade12c5a571983d3bc97413ed1ccf3182da6fb276fe5a8f07ff8375e2089affe2e6056'
   client: test-gateway
   token-uri: auth/realms/${keycloak-client.realm}/protocol/openid-connect/token
   logout-uri: auth/realms/${keycloak-client.realm}/protocol/openid-connect/logout
@@ -15,4 +15,3 @@ keycloak-client:
   realm: spring-micro-main
 profiles:
   register-uri: api/v1/profiles/signup
-
