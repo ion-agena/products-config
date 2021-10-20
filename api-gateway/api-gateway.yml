@@ -46,3 +46,8 @@ spring:
 keycloak-client:
   server-url: http://localhost:8085/auth
   realm: spring-micro-main
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
