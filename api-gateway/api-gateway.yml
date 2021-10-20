@@ -28,7 +28,7 @@ spring:
           keycloak:
             provider: keycloak
             client-id: test-gateway
-            client-secret: 9a09149c-fc58-4f66-a6e3-00109eb4517a
+            client-secret: '{cipher}6c1ca654778f10321f096b20143493b40337ad90c5b0f991b658c918aecdcd9533dae74a7293a8ad7c1e60d5a8bbde8fc1ab72814c727fd13f6431748785b2bb'
             authorization-grant-type: authorization_code
             redirect-uri: http://localhost:8085/login/oauth2/code/keycloak
             scope: openid
