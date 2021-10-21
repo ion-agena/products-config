@@ -9,6 +9,7 @@ keycloack:
   admin-secret: '{cipher}b5615e05d6ff862dcd8b8c022c7a51486170d584fdc938150a8f7c9c299bd4b35b45c503a09504813a92cfbe96bb720a49b1d10f17bcb70e2c8fecdc48506908'
   cli-token-uri: auth/realms/master/protocol/openid-connect/token
   users-uri: auth/admin/realms/${keycloak-client.realm}/users
+  email-actions-uri: auth/admin/realms/${keycloak-client.realm}/users/{id}/execute-actions-email
 keycloak-client:
   server-url: http://localhost:8085
   realm: spring-micro-main
