@@ -3,7 +3,7 @@ server:
 feign.client.config.default.loggerLevel: full
 logging:
   level:
-    com.agenatech: DEBUG
+    com.agenatech: INFO
 keycloack:
   url: ${keycloak-client.server-url}
   admin-secret: '{cipher}b5615e05d6ff862dcd8b8c022c7a51486170d584fdc938150a8f7c9c299bd4b35b45c503a09504813a92cfbe96bb720a49b1d10f17bcb70e2c8fecdc48506908'
