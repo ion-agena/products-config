@@ -30,7 +30,7 @@ spring:
         cache.use_second_level_cache: true
         cache.region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
         cache.queries: true
-anagement:
+management:
   endpoints:
     web:
       exposure:
