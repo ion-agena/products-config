@@ -13,3 +13,11 @@ spring:
   h2:
     console:
       enabled: true
+keycloack:
+  auth-server-url: ${keycloak-client.server-url}/auth
+  realm: ${keycloak-client.realm}
+  credentials:
+    secret: '{cipher}6c1ca654778f10321f096b20143493b40337ad90c5b0f991b658c918aecdcd9533dae74a7293a8ad7c1e60d5a8bbde8fc1ab72814c727fd13f6431748785b2bb'
+  use-resource-role-mappings: true
+  resource: test-gateway
+  ssl-required: external
