@@ -13,7 +13,7 @@ spring:
   h2:
     console:
       enabled: true
-keycloack:
+keycloak:
   auth-server-url: ${keycloak-client.server-url}/auth
   realm: ${keycloak-client.realm}
   credentials:
@@ -21,6 +21,3 @@ keycloack:
   use-resource-role-mappings: true
   resource: test-gateway
   ssl-required: external
-keycloak-client:
-  server-url: http://localhost:8085
-  realm: spring-micro-main
