@@ -4,6 +4,13 @@ logging:
   level:
     org.springframework.cloud.gateway: DEBUG
     reactor.netty.http.client: DEBUG
+security-constraints:
+  open-uri:
+    - /actuator/**
+    - /api/v1/profiles/signup
+    - /api/v1/profiles/forgot/password
+    - /api/v1/auth/login
+    - /api/v1/auth/refresh
 spring:
   cloud:
     gateway:
