@@ -6,7 +6,7 @@ logging:
     com.agenatech: DEBUG
 keycloack:
   url: ${keycloak-client.server-url}
-  admin-secret: '{cipher}b5615e05d6ff862dcd8b8c022c7a51486170d584fdc938150a8f7c9c299bd4b35b45c503a09504813a92cfbe96bb720a49b1d10f17bcb70e2c8fecdc48506908'
+  admin-secret: '{cipher}6090ac930c0b2cefbaec1808ceef22ebcf8aac1e76269ae94ac49f42c608a858539feb13ffd4138a46cea4a6dfd3deeb196196b3cb7561749d0fc169af2d13cd'
   cli-token-uri: auth/realms/master/protocol/openid-connect/token
   users-uri: auth/admin/realms/${keycloak-client.realm}/users
   email-actions-uri: auth/admin/realms/${keycloak-client.realm}/users/{id}/execute-actions-email
