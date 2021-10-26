@@ -30,11 +30,6 @@ keycloak-client:
   server-url: http://localhost:8085
   realm: spring-micro-main
 spring:
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: ${keycloak-client.server-url}/auth/realms/${keycloak-client.realm}
   jpa:
     show-sql: true
     hibernate:
