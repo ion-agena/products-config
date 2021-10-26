@@ -26,6 +26,7 @@ keycloak:
     authRoles[0]: '*'
     securityCollections[0]:
       patterns[0]:
-        - '/api/v1/profiles/me'
-        - '/api/v1/profiles/email/action'
+      patterns:
+        - /api/v1/profiles/me
+        - /api/v1/profiles/email/action
 
