@@ -22,4 +22,4 @@ keycloak:
   resource: test-gateway
   ssl-required: external
   securityConstraints[0].authRoles[0]: '*'
-  securityConstraints[0].securityCollections[0].patterns[0]: '/*'
+  securityConstraints[0].securityCollections[0].patterns[0]: '/api/v1/profiles/me'
