@@ -4,7 +4,7 @@ spring:
       host: consul
       port: 8500
   datasource:
-    url: jdbc:postgresql://profiles-db:5444/profiles?ssl=false
+    url: jdbc:postgresql://profiles-db:5432/profiles?ssl=false
 #    driverClassName: org.h2.Driver
     username: super-admin
     password: super-password
