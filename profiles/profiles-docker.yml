@@ -4,7 +4,7 @@ spring:
       host: consul
       port: 8500
   datasource:
-    url: jdbc:postgresql://profiles-db:5432/profiles
+    url: jdbc:postgresql://profiles-db:5444/profiles
 #    driverClassName: org.h2.Driver
     username: super-admin
     password: super-password
@@ -12,8 +12,8 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
     defer-datasource-initialization: true
     hibernate:
-      ddl-auto: create
-#      ddl-auto: update
+#      ddl-auto: create
+      ddl-auto: update
 #  h2:
 #    console:
 #      enabled: true
