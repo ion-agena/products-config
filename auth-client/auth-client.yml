@@ -11,7 +11,7 @@ keycloack:
   token-uri: auth/realms/${keycloak-client.realm}/protocol/openid-connect/token
   logout-uri: auth/realms/${keycloak-client.realm}/protocol/openid-connect/logout
 keycloak-client:
-  server-url: http://localhost:8085
+#  server-url: http://localhost:8085
   realm: spring-micro-main
 profiles:
   register-uri: api/v1/profiles/signup
