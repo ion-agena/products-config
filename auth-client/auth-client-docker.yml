@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    consul:
+      host: consul
+      port: 8500
+keycloak-client:
+  server-url: http://keycloak:8080
+#keycloack.url: http://keycloak:8080
