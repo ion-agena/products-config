@@ -8,4 +8,4 @@ spring:
 keycloak-client:
   server-url: http://keycloak:8080
 keycloack:
-  secret: '{cipher}6fce16c4ffc2f64ae78db86916b757f3d371a1e933c10d79c2582937c1c1aee559126a019cbf40f8e8187d6e34d832e6df43a84ae7cf4a9777e7625de6e860cb'
+  secret: '{cipher}a0e2061c54ed067ede0a086577b762b9ccc588875e76a0663614c04cb4a103142df05566f6ad29a63ee15dec44d4720b9b84f7970056de25b7605217d9b226f3'
