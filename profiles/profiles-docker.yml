@@ -4,15 +4,14 @@ spring:
       host: consul
       port: 8500
   datasource:
-    url: jdbc:postgresql://profiles-db:5432/profiles?ssl=false?createDatabaseIfNotExist=true
+    url: jdbc:postgresql://profiles-db:5432/profiles?ssl=false
     username: super-admin
     password: super-password
+    initialization-mode: always
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
-#    defer-datasource-initialization: true
-#    hibernate:
-#      ddl-auto: create
-#      ddl-auto: update
+    hibernate:
+      ddl-auto: update
 keycloak-client:
   server-url: http://keycloak:8080
 keycloack:
