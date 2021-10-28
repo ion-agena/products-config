@@ -5,18 +5,14 @@ spring:
       port: 8500
   datasource:
     url: jdbc:postgresql://profiles-db:5432/profiles?ssl=false
-#    driverClassName: org.h2.Driver
     username: super-admin
     password: super-password
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
-    defer-datasource-initialization: true
+#    defer-datasource-initialization: true
 #    hibernate:
 #      ddl-auto: create
 #      ddl-auto: update
-#  h2:
-#    console:
-#      enabled: true
 keycloak-client:
   server-url: http://keycloak:8080
 keycloack:
