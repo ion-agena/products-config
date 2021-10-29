@@ -3,6 +3,7 @@ server:
 spring:
   cloud:
     kubernetes:
+      enabled: false
       discovery:
         enabled: false
 logging:

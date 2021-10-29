@@ -4,6 +4,7 @@ spring:
       discovery:
         enabled: false
     kubernetes:
+      enabled: true
       discovery:
         enabled: true
 keycloak-client:
