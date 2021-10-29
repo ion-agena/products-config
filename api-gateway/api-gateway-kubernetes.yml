@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    consul:
+      discovery:
+        enabled: false
+    kubernetes:
+      enabled: true
+keycloak-client:
+  server-url: http://keycloak:8080
