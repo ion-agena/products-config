@@ -1,5 +1,10 @@
 server:
   port: 9292
+spring:
+  cloud:
+    kubernetes:
+      discovery:
+        enabled: false
 logging:
   level:
     com.agenatech: DEBUG
