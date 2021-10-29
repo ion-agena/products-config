@@ -5,7 +5,5 @@ spring:
         enabled: false
     kubernetes:
       enabled: true
-      discovery:
-        enabled: true
 keycloak-client:
   server-url: http://keycloak:8080
