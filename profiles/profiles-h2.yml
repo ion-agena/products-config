@@ -13,9 +13,14 @@ spring:
   h2:
     console:
       enabled: true
-auth-server:
-  ribbon:
-    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-    listOfServers: localhost:8080
+  cloud:
+    loadbalancer:
+      instances:
+        - name: auth-server
+          servers: localhost:8080
+#auth-server:
+#  ribbon:
+#    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+#    listOfServers: localhost:8080
 
 
