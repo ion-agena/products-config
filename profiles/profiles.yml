@@ -27,7 +27,7 @@ keycloak:
         - /api/v1/profiles/me
         - /api/v1/profiles/email/action
 keycloak-client:
-  server-url: http://localhost:8085
+  server-url: http://localhost:8080
   realm: spring-micro-main
 spring:
   jpa:
