@@ -6,4 +6,4 @@ spring:
     kubernetes:
       enabled: true
 keycloak-client:
-  server-url: http://keycloak:8080
+  server-url: auth-server
