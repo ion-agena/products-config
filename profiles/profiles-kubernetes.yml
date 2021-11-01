@@ -10,4 +10,4 @@ spring:
     username: super-admin
     password: '{cipher}a3a04763ce88eff76f1ddf6dfdc41963c6f578235a0dd89239b2944a6bf809ae8'
 keycloak-client:
-  server-url: http://keycloak:8080
+  server-url: auth-server
