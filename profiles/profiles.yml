@@ -1,9 +1,5 @@
 server:
   port: 8989
-feign.client.config.default.loggerLevel: full
-logging:
-  level:
-    com.agenatech: DEBUG
 auth-server:
   url: ${keycloak-client.server-url}
   admin-secret: '{cipher}c56a188e7714b3f03bec9f20b1ad15497b54e7080cfcaf3f757c072db4458ee870e3982869bec08ee6659541192f7ffb3aa3e9b844a9d1674ab1e8c71a7a22e0'
@@ -45,4 +41,8 @@ management:
     web:
       exposure:
         include: '*'
+feign.client.config.default.loggerLevel: full
+logging:
+  level:
+    com.agenatech: DEBUG
 
