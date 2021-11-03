@@ -3,6 +3,7 @@ server:
 security-constraints:
   open-uri:
     - /actuator/**
+    - /**/api-doc
     - /api/v1/profiles/signup
     - /api/v1/profiles/forgot/password
     - /api/v1/auth/login
