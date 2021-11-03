@@ -26,7 +26,7 @@ springfox:
   documentation:
     swagger:
       v2:
-        path: /api/v1/auth-client/rest
+        path: /api/v1/auth-client/api-doc
 logging:
   level:
     com.agenatech: DEBUG

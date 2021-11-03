@@ -1,7 +1,7 @@
 server:
   port: 9132
 service:
-  json-url: /v2/api-docs
+  json-url: /api/v1/service/api-doc
   version: 2.0
   ignored-services:
     - consul
