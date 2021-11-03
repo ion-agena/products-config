@@ -3,9 +3,6 @@ server:
 security-constraints:
   open-uri:
     - /actuator/**
-    - /swagger-ui.html
-    - /webjars/swagger-ui/**
-    - /v3/api-docs/**
     - /api/v1/profiles/signup
     - /api/v1/profiles/forgot/password
     - /api/v1/auth/login
