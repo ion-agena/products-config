@@ -24,7 +24,7 @@ spring:
         - id: auth-client
           uri: lb://auth-client
           predicates:
-            - Path=/api/v1/auth/**
+#            - Path=/api/v1/auth/**
             - Path=/api/v1/auth-client/**
         - id: cars
           uri: lb://cars
