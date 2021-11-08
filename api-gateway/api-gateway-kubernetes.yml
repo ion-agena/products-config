@@ -1,9 +1,2 @@
-spring:
-  cloud:
-    consul:
-      discovery:
-        enabled: false
-    kubernetes:
-      enabled: true
 keycloak-client:
   server-url: auth-server

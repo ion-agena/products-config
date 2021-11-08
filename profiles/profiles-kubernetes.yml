@@ -1,10 +1,4 @@
 spring:
-  cloud:
-    consul:
-      discovery:
-        enabled: false
-    kubernetes:
-      enabled: true
   datasource:
     url: jdbc:postgresql://profiles-db:5432/profiles?ssl=false
     username: super-admin

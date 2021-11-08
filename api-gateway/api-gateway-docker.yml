@@ -1,8 +1,4 @@
 spring:
-  cloud:
-    consul:
-      host: consul
-      port: 8500
   security:
     oauth2:
       client:
