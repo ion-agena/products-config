@@ -7,30 +7,9 @@ spring:
     initialization-mode: always
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-    defer-datasource-initialization: true
-    hibernate:
-      ddl-auto: update
   h2:
     console:
       enabled: true
-#  cloud:
-#    discovery:
-#      client:
-#        simple:
-#          instances:
-#            auth-server:
-#              - serviceId: auth-server
-#                host:
 
-
-#    loadbalancer:
-#      instances:
-#        - name: auth-server
-#          servers: localhost:8080
-
-#auth-server:
-#  ribbon:
-#    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
-#    listOfServers: localhost:8080
 
 
