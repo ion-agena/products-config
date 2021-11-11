@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - TokenRelay
+      discovery:
+        locator:
+          enabled: false
+      routes:
+        - id: profiles
+          uri: TODO
+          predicates:
+            - Path=/api/v1/profiles/**
+        - id: auth-client
+          uri: TODO
+          predicates:
+            - Path=/api/v1/auth/**, /api/v1/auth-client/**
+keycloak-client:
+  server-url: http://localhost:8085/auth
