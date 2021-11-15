@@ -1,4 +1,4 @@
 keycloak-client:
   server-url: auth-server
 keycloack:
-  secret: '{cipher}aad15a014e2e3712e9bacd593f46d5eff131604ea52d69efe6e06b95b63e11645fb70e757e0a12fc63f54786dd672787ba4f3ad79080a1e3101246d5a54894be'
+  secret: '{cipher}eb64e7c0284acb93457665c8d9cc80d58cebb2cf340903e840d2d543e7778e1e8f556669977065d0b2d9bd4512ec82333ff2cdddbcbb48452c90993a7b5da315'
