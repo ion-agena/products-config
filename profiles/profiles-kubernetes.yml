@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://profiles-db:5432/profiles?ssl=false
-    username: super-admin
-    password: '{cipher}a3a04763ce88eff76f1ddf6dfdc41963c6f578235a0dd89239b2944a6bf809ae8'
+    url: jdbc:postgresql://agenatech.cbxabex1bwiq.eu-north-1.rds.amazonaws.com:5432/profiles?ssl=false
+    username: postgres
+    password: '{cipher}d0a1612fe2e66a648757a4726cf577501f596b6f6816a7eaf055b87dc3dd030bbf263d97f3976c62f877b900af366c9e'
 keycloak-client:
   server-url: auth-server
 keycloack:
