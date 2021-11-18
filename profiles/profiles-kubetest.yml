@@ -1,2 +1,2 @@
 keycloak-client:
-  server-url: http://a61856413c8144311bc9ed0a0133184b-1101485644.eu-north-1.elb.amazonaws.com
+  server-url: http://keycloak
