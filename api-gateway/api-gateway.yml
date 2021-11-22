@@ -15,20 +15,16 @@ spring:
         - TokenRelay
       discovery:
         locator:
-          enabled: true
+          enabled: false
       routes:
         - id: profiles
-          uri: lb://profiles
+          uri: http://profiles
           predicates:
             - Path=/api/v1/profiles/**
         - id: auth-client
-          uri: lb://auth-client
+          uri: http://auth-client
           predicates:
             - Path=/api/v1/auth/**, /api/v1/auth-client/**
-        - id: cars
-          uri: lb://cars
-          predicates:
-            - Path=/cars/**
   security:
     oauth2:
       client:
