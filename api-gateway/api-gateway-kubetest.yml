@@ -9,12 +9,12 @@ spring:
       routes:
         - id: profiles
 #          todo change
-          uri: lb://profiles
+          uri: http://profiles
           predicates:
             - Path=/api/v1/profiles/**
         - id: auth-client
           #          todo change
-          uri: lb://auth-client
+          uri: http://auth-client
           predicates:
             - Path=/api/v1/auth/**, /api/v1/auth-client/**
 keycloak-client:
