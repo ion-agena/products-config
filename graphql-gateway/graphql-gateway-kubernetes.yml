@@ -1,0 +1,5 @@
+server:
+  port: 8080
+web-client:
+  auth-client-url: http://auth-client
+  profiles-url: http://profiles

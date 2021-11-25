@@ -1,0 +1,3 @@
+web-client:
+  auth-client-url: http://api-dev.agenadev.com
+  profiles-url: http://api-dev.agenadev.com
