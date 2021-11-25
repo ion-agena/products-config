@@ -4,7 +4,8 @@ service:
   json-url: /api/v1/servicename/api-doc
   version: 2.0
   api-gateway-public-url: http://localhost:8081
-  api-gateway-service: api-gateway
+  api-gateway-service: api-gateway/actuator
+  api-gateway-routes-url: gateway/routes
 management:
   endpoints:
     web:
