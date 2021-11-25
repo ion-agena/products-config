@@ -1,8 +1,6 @@
 server:
   port: 8080
 service:
-  json-url: /api/v1/servicename/api-doc
-  version: 2.0
   api-gateway-public-url: http://api-dev.agenadev.com
   api-gateway-service: http://api-gateway/actuator
 
