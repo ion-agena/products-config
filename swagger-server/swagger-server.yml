@@ -4,16 +4,9 @@ service:
   json-url: /api/v1/servicename/api-doc
   version: 2.0
   api-gateway-public-url: http://localhost:8081
-  ignored-services:
-    - consul
-    - config-server
-    - swagger-server
-    - api-gateway
+  api-gateway-service: api-gateway
 management:
   endpoints:
     web:
       exposure:
         include: '*'
-logging:
-  level:
-    com.agenatech: DEBUG

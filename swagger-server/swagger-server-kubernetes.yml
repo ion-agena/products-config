@@ -1,0 +1,8 @@
+server:
+  port: 8080
+service:
+  json-url: /api/v1/servicename/api-doc
+  version: 2.0
+  api-gateway-public-url: http://ab136eea07ad544f68bcfa1fc7bf3fc0-306366428.eu-north-1.elb.amazonaws.com
+    api-gateway-service: http://api-gateway
+
