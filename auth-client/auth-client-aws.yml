@@ -1,0 +1,2 @@
+keycloak-client:
+  server-url: https://auth-dev.agenadev.com
