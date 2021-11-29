@@ -4,7 +4,7 @@ spring:
     username: postgres
     password: '{cipher}d0a1612fe2e66a648757a4726cf577501f596b6f6816a7eaf055b87dc3dd030bbf263d97f3976c62f877b900af366c9e'
 keycloak-client:
-  server-url: auth-server
+  server-url: http://keycloak
 keycloack:
   secret: '{cipher}eb64e7c0284acb93457665c8d9cc80d58cebb2cf340903e840d2d543e7778e1e8f556669977065d0b2d9bd4512ec82333ff2cdddbcbb48452c90993a7b5da315'
 auth-server:
