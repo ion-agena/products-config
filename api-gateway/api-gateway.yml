@@ -8,6 +8,8 @@ security-constraints:
     - /api/v1/profiles/forgot/password
     - /api/v1/auth/login
     - /api/v1/auth/refresh
+    - /webjars/swagger-ui/
+    - /swagger-ui**
 spring:
   cloud:
     gateway:
