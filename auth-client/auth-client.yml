@@ -22,8 +22,12 @@ management:
     web:
       exposure:
         include: '*'
+#        todo remove once reactive version is deployed
 springfox.documentation.swagger.v2:
   path: /api/v1/auth-client/api-doc
+springdoc:
+  api-docs:
+    path: /api/v1/auth-client/api-doc
 logging:
   level:
     com.agenatech: DEBUG
