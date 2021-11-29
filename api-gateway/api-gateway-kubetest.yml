@@ -8,15 +8,18 @@ spring:
           enabled: false
       routes:
         - id: profiles
-#          todo change
           uri: http://profiles
           predicates:
             - Path=/api/v1/profiles/**
         - id: auth-client
-          #          todo change
           uri: http://auth-client
           predicates:
             - Path=/api/v1/auth/**, /api/v1/auth-client/**
+        - id: openapi
+          uri: http://api-gateway
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /api/v1//$\{path}/api-doc
 keycloak-client:
-  #          todo change
   server-url: http://keycloak/auth
