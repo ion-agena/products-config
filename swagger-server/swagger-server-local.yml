@@ -1,4 +1,2 @@
 service:
-  api-gateway-public-url: http://api-dev.agenadev.com
-  api-gateway-service: http://api-dev.agenadev.com/actuator
-
+  api-gateway-service: http://localhost:8081/actuator
