@@ -32,6 +32,12 @@ spring:
           uri: lb://cars
           predicates:
             - Path=/cars/**
+        - id: openapi
+          uri: http://localhost:8081
+          predicates:
+            - Path=/v3/api-docs/**
+          filters:
+            - RewritePath=/v3/api-docs/(?<path>.*), /api/v1//$\{path}/api-doc
   security:
     oauth2:
       client:
