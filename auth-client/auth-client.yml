@@ -1,11 +1,5 @@
 server:
   port: 9292
-spring:
-  cloud:
-    kubernetes:
-      enabled: false
-      discovery:
-        enabled: false
 keycloack:
   url: ${keycloak-client.server-url}
   secret: '{cipher}411946586be6b69f2ad96a02710e50a50d2e76a21c0bc9a78d392451e9e0fc1c61d95b885a97ff9b131877ff5efb293182790c5a25b86b6ce1f750614754f1fb'
@@ -15,20 +9,14 @@ keycloack:
 keycloak-client:
   server-url: auth-server
   realm: spring-micro-main
-profiles:
-  register-uri: api/v1/profiles/signup
 management:
   endpoints:
     web:
       exposure:
         include: '*'
-#        todo remove once reactive version is deployed
-springfox.documentation.swagger.v2:
-  path: /api/v1/auth-client/api-doc
 springdoc:
   api-docs:
     path: /api/v1/auth-client/api-doc
 logging:
   level:
     com.agenatech: DEBUG
-feign.client.config.default.loggerLevel: full
