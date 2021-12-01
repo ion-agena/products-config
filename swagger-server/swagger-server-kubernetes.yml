@@ -1,6 +1,0 @@
-server:
-  port: 8080
-service:
-  api-gateway-public-url: http://api-dev.agenadev.com
-  api-gateway-service: http://api-gateway/actuator
-

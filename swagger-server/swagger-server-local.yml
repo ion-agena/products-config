@@ -1,2 +1,0 @@
-service:
-  api-gateway-service: http://localhost:8081/actuator/
