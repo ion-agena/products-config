@@ -53,7 +53,6 @@ spring:
           keycloak:
             provider: keycloak
             client-id: web
-            client-secret: '{cipher}4da83c00487cf3f48d32aa852e3ec361312ae5395a3719cceeb82de1aec1d9f26827c540ef690520ca4e7b0b62aa61f91fc16b25c76962ce41ce95503a2c2618'
             authorization-grant-type: authorization_code
             redirect-uri: ${keycloak-client.server-url}/login/oauth2/code/keycloak
             scope: openid
