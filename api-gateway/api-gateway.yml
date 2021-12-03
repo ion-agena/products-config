@@ -35,11 +35,11 @@ spring:
         - id: serviceFunctions
           uri: http://localhost:8095
           predicates:
-            - Path=/service/**, /api/v1/serviceFunctions/**
+            - Path=/service/**
         - id: petprofiles
           uri: http://localhost:8095
           predicates:
-            - Path=/pets, /pets/**
+            - Path=/pets, /pets/**, /api/v1/serviceFunctions/**
         - id: openapi
           uri: http://localhost:8081
           predicates:
