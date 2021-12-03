@@ -4,8 +4,10 @@ security-constraints:
   open-uri:
     - /actuator/**
     - /api/v1/*/api-doc
-    - /api/v1/profiles
-    - /api/v1/profiles/**
+    - /profiles
+    - /profiles/**
+    - /pets/**
+    - /pets
     - /webjars/swagger-ui/**
     - /swagger-ui**
     - /v3/api-docs/**
