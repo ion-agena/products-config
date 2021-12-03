@@ -4,10 +4,8 @@ security-constraints:
   open-uri:
     - /actuator/**
     - /api/v1/*/api-doc
-    - /api/v1/profiles/signup
-    - /api/v1/profiles/forgot/password
-    - /api/v1/auth/login
-    - /api/v1/auth/refresh
+    - /api/v1/profiles
+    - /api/v1/profiles/**
     - /webjars/swagger-ui/**
     - /swagger-ui**
     - /v3/api-docs/**
@@ -20,16 +18,38 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: userprofiles
+        - id: userProfilesPrincipalGetPatchDelete
           uri: http://localhost:8095
           predicates:
-            - Path=/profiles**
+            - Path=/profiles/me
+            - Method=GET,PATCH,DELETE
           filters:
             - AddPrincipalToPathFilter
+        - id: userProfilesPut
+          uri: http://localhost:8095
+          predicates:
+            - Path=/profiles/**
+            - Method=PUT
+        - id: serviceFunctions
+          uri: http://localhost:8095
+          predicates:
+            - Path=/service/**
+#        - id: userProfilesPrincipal
+#          uri: http://localhost:8095
+#          predicates:
+#            - Path=/profiles**
+#            - Method=GET,POST
+#          filters:
+#            - AddPrincipalToPathFilter
+#        - id: userProfilesPlain
+#          uri: http://localhost:8095
+#          predicates:
+#            - Path=/profiles**
+#            - Method=PUT,POST
         - id: petprofiles
           uri: http://localhost:8095
           predicates:
-            - Path=/pets**, /service**
+            - Path=/pets**
         - id: openapi
           uri: http://localhost:8081
           predicates:
