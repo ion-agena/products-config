@@ -20,7 +20,7 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: userProfiles
+        - id: userprofiles
           uri: http://localhost:8095
           predicates:
             - Path=/profiles**
