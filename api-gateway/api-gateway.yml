@@ -20,18 +20,16 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: profiles
-          uri: lb://profiles
+        - id: user-profiles
+          uri: http://localhost:8095
           predicates:
-            - Path=/api/v1/profiles/**
-        - id: auth-client
-          uri: lb://auth-client
-          predicates:
-            - Path=/api/v1/auth/**, /api/v1/auth-client/**
-        - id: cars
-          uri: lb://cars
-          predicates:
-            - Path=/cars/**
+            - Path=/profiles**
+          filters:
+            - AddPrincipalToPathFilter
+        - id: pet-profiles
+            uri: http://localhost:8095
+            predicates:
+              - Path=/pets**, /service**
         - id: openapi
           uri: http://localhost:8081
           predicates:
