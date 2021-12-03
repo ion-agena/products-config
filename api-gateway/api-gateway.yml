@@ -26,8 +26,8 @@ spring:
             - Path=/profiles**
           filters:
             - AddPrincipalToPathFilter
-        - id: petProfiles
-            uri: http://localhost:8095
+        - id: petprofiles
+          uri: http://localhost:8095
             predicates:
               - Path=/pets**, /service**
         - id: openapi
