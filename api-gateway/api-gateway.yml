@@ -20,13 +20,13 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: user-profiles
+        - id: userProfiles
           uri: http://localhost:8095
           predicates:
             - Path=/profiles**
           filters:
             - AddPrincipalToPathFilter
-        - id: pet-profiles
+        - id: petProfiles
             uri: http://localhost:8095
             predicates:
               - Path=/pets**, /service**
