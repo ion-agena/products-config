@@ -52,7 +52,7 @@ spring:
         registration:
           keycloak:
             provider: keycloak
-            client-id: test-gateway
+            client-id: web
             client-secret: '{cipher}065fe7f59fa824ff98d5e84631933b27e63401d2913ee2405bb48d3385bbc6b4d59d5842e2865520ddc907fcafc4ec110e1f9c1edd793c33de3f70a5114478e2'
             authorization-grant-type: authorization_code
             redirect-uri: ${keycloak-client.server-url}/login/oauth2/code/keycloak
@@ -70,7 +70,7 @@ spring:
           jwk-set-uri: ${keycloak-client.server-url}/realms/${keycloak-client.realm}/protocol/openid-connect/certs
 keycloak-client:
   server-url: https://auth-dev.agenadev.com/auth
-  realm: spring-micro-main
+  realm: vet-at-home
 management:
   endpoints:
     web:
