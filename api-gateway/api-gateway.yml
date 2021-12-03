@@ -36,18 +36,6 @@ spring:
           uri: http://localhost:8095
           predicates:
             - Path=/service/**
-#        - id: userProfilesPrincipal
-#          uri: http://localhost:8095
-#          predicates:
-#            - Path=/profiles**
-#            - Method=GET,POST
-#          filters:
-#            - AddPrincipalToPathFilter
-#        - id: userProfilesPlain
-#          uri: http://localhost:8095
-#          predicates:
-#            - Path=/profiles**
-#            - Method=PUT,POST
         - id: petprofiles
           uri: http://localhost:8095
           predicates:
