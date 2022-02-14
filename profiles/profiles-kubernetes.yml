@@ -3,6 +3,9 @@ spring:
     url: jdbc:postgresql://profiles-db:5432/profiles?ssl=false
     username: super-admin
     password: '{cipher}a3a04763ce88eff76f1ddf6dfdc41963c6f578235a0dd89239b2944a6bf809ae8'
+    hikari:
+      maximum-pool-size: 5
+      initial-pool-size: 1
 keycloak-client:
   server-url: auth-server
 keycloack:
