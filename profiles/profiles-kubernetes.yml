@@ -1,16 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://profiles-db:5432/profiles?ssl=false
-    username: super-admin
-    password: '{cipher}a3a04763ce88eff76f1ddf6dfdc41963c6f578235a0dd89239b2944a6bf809ae8'
+    url: jdbc:postgresql://agenatech.cbxabex1bwiq.eu-north-1.rds.amazonaws.com:5432/gamificaton-manager?ssl=false
+    username: postgres
+    password: '{cipher}d0a1612fe2e66a648757a4726cf577501f596b6f6816a7eaf055b87dc3dd030bbf263d97f3976c62f877b900af366c9e'
     maximum-pool-size: 2
     hikari:
       maximum-pool-size: 5
       initial-pool-size: 1
       connection-timeout: 20000
-keycloak-client:
-  server-url: auth-server
-keycloack:
-  secret: '{cipher}eb64e7c0284acb93457665c8d9cc80d58cebb2cf340903e840d2d543e7778e1e8f556669977065d0b2d9bd4512ec82333ff2cdddbcbb48452c90993a7b5da315'
-auth-server:
-  admin-secret: '{cipher}f4e4c6a44095c2b08bc99f6396bedffe38ffcb323fd7d3f4b6b871fc950b7a98f68739782b440eec0f08046d2cb0b6b584c88a175feccb324aa43d8f5dd915d4'

@@ -1,50 +1,38 @@
 server:
+  forward-headers-strategy: framework
   port: 8989
-auth-server:
-  url: ${keycloak-client.server-url}
-  admin-secret: '{cipher}c56a188e7714b3f03bec9f20b1ad15497b54e7080cfcaf3f757c072db4458ee870e3982869bec08ee6659541192f7ffb3aa3e9b844a9d1674ab1e8c71a7a22e0'
-  cli-token-uri: auth/realms/master/protocol/openid-connect/token
-  users-uri: auth/admin/realms/${keycloak-client.realm}/users
-  email-actions-uri: auth/admin/realms/${keycloak-client.realm}/users/{id}/execute-actions-email
-keycloak:
-  auth-server-url: ${keycloak-client.server-url}/auth
-  realm: ${keycloak-client.realm}
-  credentials:
-    secret: '{cipher}411946586be6b69f2ad96a02710e50a50d2e76a21c0bc9a78d392451e9e0fc1c61d95b885a97ff9b131877ff5efb293182790c5a25b86b6ce1f750614754f1fb'
-  use-resource-role-mappings: true
-  resource: test-gateway
-  ssl-required: external
-  bearer-only: true
-  securityConstraints[0]:
-    authRoles[0]: '*'
-    securityCollections[0]:
-      patterns[0]:
-      patterns:
-        - /api/v1/profiles/me
-        - /api/v1/profiles/email/action
-keycloak-client:
-  server-url: auth-server
-  realm: spring-micro-main
 spring:
+  data.rest.base-path: api/v1
+  datasource:
+    url: jdbc:postgresql://localhost:5432/profiles?ssl=false
+    username: user
+    password: password
   jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+        cache:
+          use_second_level_cache: true
+          region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+          queries: true
+          ehcache:
+            missing_cache_strategy: create
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
     show-sql: true
     hibernate:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-    properties:
-      hibernate:
-        cache.use_second_level_cache: true
-        cache.region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
-        cache.queries: true
 management:
   endpoints:
     web:
       exposure:
         include: '*'
-springdoc:
-  api-docs: /api/v1/profiles/api-doc
-feign.client.config.default.loggerLevel: full
+springdoc.api-docs.path: /api/v1/profiles/api-doc
 logging:
   level:
     com.agenatech: DEBUG
+
+
+
+
 
