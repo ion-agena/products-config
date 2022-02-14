@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://agenatech.cbxabex1bwiq.eu-north-1.rds.amazonaws.com:5432/gamificaton-manager?ssl=false
+    url: jdbc:postgresql://agenatech.cbxabex1bwiq.eu-north-1.rds.amazonaws.com:5432/profiles?ssl=false
     username: postgres
     password: '{cipher}d0a1612fe2e66a648757a4726cf577501f596b6f6816a7eaf055b87dc3dd030bbf263d97f3976c62f877b900af366c9e'
     maximum-pool-size: 2
