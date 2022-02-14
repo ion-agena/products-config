@@ -39,14 +39,14 @@ spring:
   datasource:
     hikari:
       maximum-pool-size: 5
-      initial-pool-size: 5
+      initial-pool-size: 1
 management:
   endpoints:
     web:
       exposure:
         include: '*'
-springfox.documentation.swagger.v2:
-  path: /api/v1/profiles/api-doc
+springdoc:
+  api-docs: /api/v1/profiles/api-doc
 feign.client.config.default.loggerLevel: full
 logging:
   level:
