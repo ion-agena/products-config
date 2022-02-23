@@ -28,3 +28,6 @@ logging:
   level:
     com.agenatech: DEBUG
 feign.client.config.default.loggerLevel: full
+health:
+  config:
+    enabled: false
