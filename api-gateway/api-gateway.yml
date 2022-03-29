@@ -11,6 +11,9 @@ security-constraints:
 spring:
   cloud:
     gateway:
+      httpclient:
+        connect-timeout: 3000
+        response-timeout: 3s
       default-filters:
         - TokenRelay
       discovery:
