@@ -22,6 +22,20 @@ spring:
     hibernate:
       ddl-auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  # Producer properties
+  kafka:
+    enabled: true
+    producer:
+      bootstrap-servers: b-1.agenatech.7a37a4.c2.kafka.eu-north-1.amazonaws.com:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.type.mapping: profile:com.agenatech.solutions.profiles.model.UserProfile
+    topic:
+      name: user-profile-create
+      replicas: 3
+      partitions: 3
+
 management:
   endpoints:
     web:
