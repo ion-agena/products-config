@@ -25,6 +25,7 @@ spring:
   # Producer properties
   kafka:
     enabled: true
+    bootstrap-servers: b-1.agenatech-dev.9cindp.c2.kafka.eu-north-1.amazonaws.com:9094, b-2.agenatech-dev.9cindp.c2.kafka.eu-north-1.amazonaws.com:9094
     properties:
       security.protocol: SSL
     producer:
