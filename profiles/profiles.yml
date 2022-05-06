@@ -36,7 +36,7 @@ spring:
         spring.json.type.mapping: profile:com.agenatech.solutions.profiles.model.UserProfile
     topic:
       name: test-topic-22
-      replicas: 3
+      replicas: 2
       partitions: 3
 
 management:
