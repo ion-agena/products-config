@@ -28,7 +28,7 @@ spring:
 #    properties:
 #      security.protocol: SASL_SSL
     producer:
-      bootstrap-servers: b-1.agenatech-dev.9cindp.c2.kafka.eu-north-1.amazonaws.com:9094
+      bootstrap-servers: b-1.agenatech-dev.9cindp.c2.kafka.eu-north-1.amazonaws.com:9094, b-2.agenatech-dev.9cindp.c2.kafka.eu-north-1.amazonaws.com:9094
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
